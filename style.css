@@ -1,0 +1,78 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    height: fit-content;
+}
+
+h1 { color: #1e3c72; text-align: center; margin-bottom: 10px; }
+p { text-align: center; color: #666; margin-bottom: 25px; font-size: 15px; }
+
+#campoBusca {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#campoBusca:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 10px rgba(42, 82, 152, 0.3);
+}
+
+#listaResultados { list-style-type: none; margin-top: 20px; }
+
+.item-resultado {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 5px solid #2a5298;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* Matriz Dinâmica */
+.titulo-dinamico {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.linha-dinamica {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.linha-dinamica strong { color: #2a5298; }
+
+.mensagem-erro {
+    text-align: center;
+    color: #e74c3c;
+    padding: 20px;
+    background-color: #fdf0ed;
+    border-radius: 8px;
+    border: 1px dashed #e74c3c;
+    font-weight: bold;
+}
